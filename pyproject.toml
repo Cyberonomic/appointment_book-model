@@ -1,0 +1,12 @@
+[project]
+name = "sesiones"
+version = "1.0.0"
+description = "Extrae sesiones efectuadas de una cartelera semanal y escribe un CSV anonimizado."
+requires-python = ">=3.11"
+dependencies = ["openpyxl>=3.1"]
+
+[project.scripts]
+sesiones = "sesiones.cli:main"
+
+[tool.setuptools]
+packages = ["sesiones"]

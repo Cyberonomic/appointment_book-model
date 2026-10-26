@@ -1,0 +1,48 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+tests/_tmp/
+sedes_local.txt
+sedes*.txt
+variantes_sede_local.txt
+textos_excluidos_local.txt
+*.egg-info/
+dist/
+build/
+datos/
+salida/
+# Excels locales (carteleras, clasificación interna, revisión manual)
+*.xlsx
+*.xls
+revision_manual.xlsx
+*_clasificacion*.xlsx
+.DS_Store
+
+# Data & documents (never commit)
+*.csv
+*.docx
+*.ipynb
+
+# Logs
+*.log
+logs/
+
+# Environments / tooling
+.venv/
+venv/
+.env
+.env.*
+
+# Notebooks & IDE
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS
+Thumbs.db
+
+# Local screenshots (not part of the package)
+Images/
