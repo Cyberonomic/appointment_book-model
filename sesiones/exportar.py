@@ -1,4 +1,4 @@
-"""Salidas públicas y el cruce interno por folio."""
+"""Salidas públicas y el cruce interno por ID."""
 
 from __future__ import annotations
 
@@ -77,7 +77,7 @@ def exportar_personas_2026_publicas(personas: list[Persona2026]) -> list[dict[st
 
 
 def unificar_personas(eventos: list[Evento2025], personas: list[Persona2026]) -> list[PersonaUnificada]:
-    """Vista interna. No se publica hasta verificar el cruce por folio."""
+    """Vista interna."""
     por_folio: dict[str, list[Evento2025]] = defaultdict(list)
     for evento in eventos:
         if evento.folio:
@@ -134,7 +134,7 @@ def cruzar_por_folio(
     sesiones: list[SesionAgenda],
     personas: list[PersonaUnificada],
 ) -> list[tuple[SesionAgenda, PersonaUnificada | None]]:
-    """Solo une si el folio de la sesión existe en la persona unificada. No inventa."""
+    """Solo une si el ID de la sesión existe. No inventa."""
     indice = {p.folio: p for p in personas}
     cruce = []
     for sesion in sesiones:
