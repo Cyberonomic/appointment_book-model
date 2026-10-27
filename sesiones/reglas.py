@@ -1,8 +1,4 @@
-"""Catálogos y reglas del modelo de agendas y expedientes.
-
-No publica texto de celdas. El folio es el único puente. Si no hay folio,
-la sesión se cuenta en C y no se une a A, B, D ni E.
-"""
+"""Catálogos y reglas del modelo."""
 
 from __future__ import annotations
 
