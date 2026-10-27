@@ -1,4 +1,4 @@
-"""Línea de comandos del modelo de agendas y expedientes."""
+"""Línea de comandos del modelo."""
 
 from __future__ import annotations
 
