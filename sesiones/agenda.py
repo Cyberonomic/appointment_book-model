@@ -1,4 +1,4 @@
-"""Extractores de agenda vertical (oct–ene) y horizontal (feb+)."""
+"""Extractores de agenda vertical y horizontal."""
 
 from __future__ import annotations
 
