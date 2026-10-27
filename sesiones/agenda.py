@@ -349,7 +349,7 @@ def exportar_slots_publicos(
     slots: list[SlotClasificado],
     cerradas: bool = False,
 ) -> list[dict[str, str | int]]:
-    """Alias como sesiones públicas; sin texto, terapeuta en claro ni folio (folio solo en XLSX interno)."""
+    """Anonimización de información."""
     terapeutas: dict[str, str] = {}
     sedes_cod: dict[str, str] = {}
     filas: list[dict[str, str | int]] = []
@@ -601,7 +601,7 @@ def exportar_sesiones_publicas(
     sesiones: list[SesionAgenda],
     cerradas: bool = False,
 ) -> list[dict[str, str | int]]:
-    """Aliases, fecha, hora, folio e iu_if. Sin texto, terapeuta ni sede en claro."""
+    """Aliases."""
     terapeutas: dict[str, str] = {}
     sedes_cod: dict[str, str] = {}
     filas: list[dict[str, str | int]] = []
