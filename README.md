@@ -1,4 +1,4 @@
-# Session
+# Effective point
 
 Appointment-grid extractor. Turns colour-coded weekly appointment books (Excel) into a clean table of sessions that actually occurred. A row is a session slot. The only join key to a case file is an explicit identifier; if it is missing, the session is counted but not linked. The extractor does not guess layout: day blocks are declared. Fill colour plus non-empty text marks an effective point; other type-work text is excluded.
 
