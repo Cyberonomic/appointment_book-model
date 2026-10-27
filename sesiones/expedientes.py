@@ -1,4 +1,4 @@
-"""Lectores de las bases de expedientes. Índices de columna fijos por layout (2025 / 2026)."""
+"""Lectores de las bases."""
 
 from __future__ import annotations
 
