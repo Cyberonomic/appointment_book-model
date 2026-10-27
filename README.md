@@ -19,7 +19,7 @@ Month block coordinates live in `sesiones/bloques.py` as one **example** layout 
 
 **Vertical** months stack days; **horizontal** months place days side by side. Sites come from a local catalog file (`--sites`). A colour-effective slot without a header is skipped.
 
-Public CSV columns: `contacto_id`, `fecha`, `terapeuta_alias`, `sede_alias`, `hora`, `folio`, `iu_if`, `layout` (aliases only; no cell text).
+Public CSV columns: `contacto_id`, `fecha`, `terapeuta_alias`, `sede_alias`, `hora`, `folio`, `iu_if`, `layout` (aliases only).
 
 ```bash
 python -m sesiones agenda \
@@ -33,7 +33,7 @@ Optional: `--folio-pattern`, `--excluded-phrases textos_excluidos_local.txt`, `-
 
 Month keys: `oct2025`, `nov2025`, `dic2025`, `ene2026`, `feb2026`, `mar2026`, `abr2026`, `may2026`, and others defined in `bloques.py`.
 
-## Case files (expedientes)
+## Case files
 
 Column indices match fixed 2025 / 2026 export layouts; adjust indices in code if your file differs.
 
@@ -49,11 +49,7 @@ python -m sesiones personas-2026 \
   --output ./salida/personas_2026.csv
 ```
 
-Public outputs omit names and phone numbers. Join to sessions only when the session row carries the same identifier (`cruzar_por_folio`).
-
-## Out of scope
-
-Does not treat repeated names on the grid as one person. Does not merge 2025 and 2026 tables. Does not infer layout or coordinator totals.
+Public outputs only.
 
 ## Tests
 
